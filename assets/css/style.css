@@ -1,0 +1,14 @@
+
+body {
+    background-image: url(../images/bananas.png);
+    align-items: center;
+}
+
+.container {
+    padding: 20px;
+    background: pink;
+    align-content: center;
+    text-align: center;
+    color: white;
+}
+
