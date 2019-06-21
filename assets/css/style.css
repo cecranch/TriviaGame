@@ -6,6 +6,7 @@ body {
 
 .container {
     padding: 20px;
+    margin: left 30px; 
     background: pink;
     align-content: center;
     text-align: center;

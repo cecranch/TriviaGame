@@ -1,21 +1,18 @@
 // $(document).ready(function() {
 
+    var correctAnswers = 0;
+    // $('#correctAnswers').text(correctAnswers);
 
-
-
-function startNewQuiz() {
+function NewQuiz() {
     // select ids of elements I want hidden
     $('#score').hide();
     // set correct answers to 0
-    var correctAnswers = 0;
 
-    $('#correctAnswers').text(correctAnswers);
-}
-
+};
 
 
 //60 Second Countdown Timer --- code here
-var timeLimit = 5;
+var timeLimit = 60;
 var timer = setInterval(countdown, 1000);
 
 function countdown() {
@@ -24,23 +21,33 @@ function countdown() {
     if(timeLimit <= 0){
         clearInterval(timer);
         document.getElementById("timer").innerHTML = "Time's Up!"
+        $('#score').show();
     }
   };
 
 // if value = correct, correctAnswers + 1
-var correctAnswers = 0;
-for(var i = 1; i <= 3; i++) {
 
-    if(radio.value === "correct" && radio.checked) {
-      correctAnswers++;
-    }
-  }
-// click submit to display score and stop timer
-  submitButton.onclick = function(){
-        console.log(mary);
-    $('#score').show();
-  }
+// for(var i = 1; i <= 3; i++) {
 
-  startNewQuiz();
+//     if(question.value === "correct" && radio.checked) {
+//       correctAnswers++;
+//     }
+//   };
+// click submit to display score and stop time
+    $('#submit').on('click', countdown);
+        console.log(countdown);
+        $('#score').show();
+
+
+    var userChoice = this.value;
+    if (userChoice === "correct") {
+        correctAnswers++;
+        $('#correctAnswers').text(correctAnswers);
+      } 
+   
+
+  NewQuiz();
 // });
+
+
 //   
