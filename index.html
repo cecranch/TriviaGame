@@ -18,59 +18,71 @@
 
         <h1>Totally Trivial Trivia!</h1>
 
-        <p>Sample Question 1</p>
+
+        <h2>Time Remaining: <span id="timer"> </span></h2>
+        <br><h3 id="score">You scored:  <span id="correctAnswers"></span> out of 3</h3>
+
+        <p>Farmer’s pick this fruit before it is ready, then use technology to trick it into ripening before hitting the shelves.</p>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">1</label>
+            <label class="form-check-label" for="inlineRadio1" value="correct">a Banana</label>
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">2</label>
+            <label class="form-check-label" for="inlineRadio2" value="incorrect">b Tomato</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-                disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3" value="incorrect">c Peach</label>
         </div>
     <br>
     <br>
-    
-        <p>Sample Question 2</p>
+
+        <p>In 45 A.D., this fruit was originally called “ida” after the mountain it was grown on.</p>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">1</label>
+            <label class="form-check-label" for="inlineRadio1" value="incorrect">a Strawberry</label>
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">2</label>
+            <label class="form-check-label" for="inlineRadio2" value="correct">b Raspberry</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-                disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3" value="correct">c Blueberry</label>
         </div>
 
     <br>
     <br>
-        <p>Sample Question 3</p>
+        <p>What fruit has more protein than any other?</p>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-            <label class="form-check-label" for="inlineRadio1">1</label>
+            <label class="form-check-label" for="inlineRadio1" value="incorrect">a Apricots</label>
         </div>
         <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-            <label class="form-check-label" for="inlineRadio2">2</label>
+            <label class="form-check-label" for="inlineRadio2" value="incorrect">b Cherries</label>
         </div>
         <div class="form-check form-check-inline">
-            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"
-                disabled>
-            <label class="form-check-label" for="inlineRadio3">3 (disabled)</label>
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+            <label class="form-check-label" for="inlineRadio3" value="correct">c Avocado</label>
         </div>
 
     <br>
     <br>
-    <br><button type="button" class="btn btn-primary">Submit</button>
-    </div>
+    <br><button id="submit" type="button" class="btn btn-primary">Submit</button>
+
+
+  
+
+</div>
+
+<!-- link to Javascript source page -->
+<script type="text/javascript" src="assets/javascript/app.js"></script>
+<!-- Link to jQuery CDN-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 </body>
 
 </html>
