@@ -4,6 +4,8 @@
 
 $('#score').hide();
 
+    var correctAnswers;
+    correctAnswers = 0;
     var timeLimit = 10;
     var timer = setInterval(countdown, 1000);
     
@@ -19,34 +21,33 @@ $('#score').hide();
       };
 
 
-      var correctAnswers;
-      correctAnswers = 0;
-
-
       $("#submit").click(function(){
         console.log("clicky");
-        console.log(correctAnswers);
         $('#time').hide();
         $('#score').show();
-        if ($('input[value="correct"]:checked'), function (){
-            correctAnswers++; 
-            $('#correctAnswers').text(correctAnswers);
-      });
-    
-
-timeLimit.countdown;
-
-});
-    //   function test() {
-    //      if ($('input[value="correct"]:checked'), function (){
-    //         correctAnswers++; 
-            // $('#correctAnswers').text(correctAnswers);
      
+        
+        var input = document.getElementsByTagName("input")
+        for (var i=0;i<input.length;i++) {
+            if (input[i].value=="correct") {
+                if (input[i].checked==true){
+                    correctAnswers++
+                }
+            }
+            };
+
+            timeLimit.countdown;
+        });
 
 
-    // function NewQuiz() {
-    // //     //     // select ids of elements I want hidden
-    //         $('#score').hide();
+        // for (var i = 0; i < radio; i++) {
+        //     if ($('input[value="correct"]:checked').val()); {
+        //         correctAnswers++;
+        //         console.log("right");
+        //         $('#correctAnswers').text(correctAnswers);
+        //     }
+        
+  
 
 
 // var questions = [{
